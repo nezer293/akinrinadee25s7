@@ -1,0 +1,30 @@
+/* Make h1 pink and give it a purple dotted border */
+h1 {
+  color: hotpink;
+  border-bottom: 10px dotted purple;
+}
+
+/* Make all h2 elements italic */
+h2 {
+  font-style: italic;
+}
+
+/* Style for contact information box */
+.contact-info {
+  background-color: #eeeeee;
+  border: 5px solid purple;
+  padding: 15px;
+  list-style: disc;
+}
+
+/* Fake link hover style */
+.fake-link {
+  color: orangered;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* When hovered, make fake link green */
+.fake-link:hover {
+  color: green;
+}
