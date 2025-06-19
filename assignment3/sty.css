@@ -18,13 +18,13 @@ h2 {
 }
 
 /* Fake link hover style */
-.fake-link {
+.link {
   color: orangered;
   text-decoration: underline;
   cursor: pointer;
 }
 
 /* When hovered, make fake link green */
-.fake-link:hover {
+.link:hover {
   color: green;
 }
