@@ -18,7 +18,7 @@ body {
   text-align: center;
   line-height: 200px; 
   border-radius: 15px;
-  border: 1px solid #a50000; /* slightly darker red */
+  border: 1px solid #a50000; 
   box-shadow: 
     4px 4px 8px rgba(0, 0, 0, 0.6),  /* main black shadow */
     -4px -4px 8px rgba(255, 255, 255, 0.2); /* soft light highlight */
