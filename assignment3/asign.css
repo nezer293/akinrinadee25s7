@@ -16,7 +16,7 @@ body {
   font-size: 1.5rem; 
   font-family: Arial, sans-serif;
   text-align: center;
-  line-height: 200px; /* vertically center text */
+  line-height: 200px; 
   border-radius: 15px;
   border: 1px solid #a50000; /* slightly darker red */
   box-shadow: 
