@@ -22,5 +22,5 @@ body {
   box-shadow: 
     4px 4px 8px rgba(0, 0, 0, 0.6), 
     -4px -4px 8px rgba(255, 255, 255, 0.2); /* soft light highlight */
-  text-shadow: 1px 1px 2px black; /* black shadow on text for contrast */
+  text-shadow: 1px 1px 2px black; 
 }
