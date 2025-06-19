@@ -1,5 +1,26 @@
-html {
-  font-family: sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-/* Your CSS below here */
+.cool-box {
+  width: 300px;
+  height: 200px;
+  background-color: #d60000; 
+  color: white;
+  font-size: 1.5rem; /* uses rem unit */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  line-height: 200px; /* vertically center text */
+  border-radius: 15px;
+  border: 1px solid #a50000; /* slightly darker red */
+  box-shadow: 
+    4px 4px 8px rgba(0, 0, 0, 0.6),  /* main black shadow */
+    -4px -4px 8px rgba(255, 255, 255, 0.2); /* soft light highlight */
+  text-shadow: 1px 1px 2px black; /* black shadow on text for contrast */
+}
