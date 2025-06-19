@@ -25,7 +25,6 @@ h2 {
   cursor: pointer;
 }
 
-/* When hovered, make  link green */
 .link:hover {
   color: green;
 }
