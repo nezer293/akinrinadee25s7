@@ -1,4 +1,7 @@
-/* Make h1 pink and give it a purple dotted border */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 h1 {
   color: hotpink;
   border-bottom: 10px dotted purple;
@@ -17,14 +20,14 @@ h2 {
   list-style: disc;
 }
 
-/* Fake link hover style */
+/* link hover style */
 .link {
   color: orangered;
   text-decoration: underline;
   cursor: pointer;
 }
 
-/* When hovered, make fake link green */
+/* When hovered, make  link green */
 .link:hover {
   color: green;
 }
