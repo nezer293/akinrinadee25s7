@@ -18,7 +18,7 @@ function randomValueFromArray(array) {
 randomize.addEventListener('click', result);
 
 function result() {
-  let newStory = storyText;
+  let newStory = storyText
 
   const xItem = randomValueFromArray(insertX);
   const yItem = randomValueFromArray(insertY);
