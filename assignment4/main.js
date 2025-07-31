@@ -18,7 +18,7 @@ function randomValueFromArray(array) {
 randomize.addEventListener('click', result);
 
 function result() {
-  let newStory = storyText
+  let newStory = storyText;
 
   const xItem = randomValueFromArray(insertX);
   const yItem = randomValueFromArray(insertY);
@@ -36,7 +36,7 @@ function result() {
     const weightInStones = Math.round(300 / 14);
     newStory = newStory.replaceAll("300 pounds", `${weightInStones} stones`);
 
-    const tempInCelsius = Math.round((94 - 32) * 5 / 9);
+    const tempInCelsius = Math.round((9 - 32) * 5 / 9);
     newStory = newStory.replaceAll("94 fahrenheit", `${tempInCelsius} centigrade`);
   }
 
