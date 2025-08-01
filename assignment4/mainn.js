@@ -21,7 +21,7 @@ const basePath = '/akinrinadee25s7/img/';
 imageFiles.forEach(file => {
   const newImage = document.createElement('img');
   newImage.setAttribute('src', basePath + file);
-  newImage.setAttribute('alt', altText[file])
+  newImage.setAttribute('alt', altText[file]);
   thumbBar.appendChild(newImage);
 
   // When a thumbnail is clicked, update main image
