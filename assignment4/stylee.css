@@ -11,7 +11,7 @@ body {
 .full-img {
   position: relative;
   display: block;
-  width: 640px
+  width: 640px;
   height: 480px;
 }
 
