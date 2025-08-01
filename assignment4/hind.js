@@ -107,7 +107,7 @@ class EvilCircle {
           break;
         case "s":
           this.y += this.velY;
-          break
+          break;
       }
     });
   }
