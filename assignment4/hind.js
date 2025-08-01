@@ -103,7 +103,7 @@ class EvilCircle {
           this.x += this.velX;
           break;
         case "w":
-          this.y -= this.velY;
+          this.y -= this.velY
           break;
         case "s":
           this.y += this.velY;
