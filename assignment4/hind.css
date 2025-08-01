@@ -10,6 +10,7 @@ html {
 body {
   overflow: hidden;
   height: inherit;
+  background-color: black;
 }
 
 h1 {
@@ -19,7 +20,15 @@ h1 {
   margin: 0;
   top: -4px;
   right: 5px;
-
   color: transparent;
   text-shadow: 0 0 4px white;
+}
+
+.ball-count {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  font-size: 1.2rem;
+  color: white;
+  font-family: sans-serif;
 }
