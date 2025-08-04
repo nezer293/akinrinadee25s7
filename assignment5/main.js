@@ -53,7 +53,7 @@ function submitComment() {
   listItem.appendChild(commentPara);
 
   nameField.value = '';
-  commentField.value = '';
+  commentField.value = ''
 
   // Optionally, put focus back on the name field after submission for convenience
   nameField.focus();
