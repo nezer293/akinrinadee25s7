@@ -56,5 +56,5 @@ function submitComment() {
   commentField.value = '';
 
   // Optionally, put focus back on the name field after submission for convenience
-  nameField.focus()
+  nameField.focus();
 }
