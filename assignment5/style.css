@@ -336,7 +336,7 @@ summary {
 }
 
 summary:hover {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 /* Ensure headings have proper margins after semantic changes */
