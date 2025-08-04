@@ -41,7 +41,7 @@ function submitComment() {
 
   // Basic validation (optional, but good practice)
   if (!nameValue || !commentValue) {
-      alert('Please enter both your name and comment!');
+      alert('Please enter both your name and comment!')
       return;
   }
 
