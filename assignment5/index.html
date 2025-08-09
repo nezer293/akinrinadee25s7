@@ -1,115 +1,106 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Wildlife Website</title> <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bears - Nature Facts</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    </head>
+<header>
+  <h1>Bears - Nature Facts</h1>
+  <form action="#" method="get" aria-label="Site search">
+    <label for="search" class="sr-only">Search the site</label>
+    <input type="text" id="search" name="search" placeholder="Search...">
+    <button type="submit">Go</button>
+  </form>
+</header>
 
-  <body>
-    <header class="header"> <h1>Welcome to our wildlife website</h1> </header>
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Articles</a></li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
 
-    <nav class="nav"> <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Our team</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Blog</a></li>
+<main>
+  <article>
+    <h2>About Bears</h2>
+    <p>Bears are large mammals that can be found in North America, South America, Europe, and Asia...</p>
+
+    <figure>
+      <img src="../img/urban-bear.jpg" alt="Brown bear standing in a forest">
+      <figcaption>Brown bear in its natural habitat.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="../img/wild-bear.jpg" alt="Polar bear walking across ice">
+      <figcaption>Polar bear in the Arctic.</figcaption>
+    </figure>
+
+    <h2>Bear Sounds</h2>
+    <audio controls>
+      <source src="bear.mp3" type="audio/mpeg">
+      <a href="bear.mp3">Download the audio file</a>
+    </audio>
+
+    <section aria-labelledby="audio-transcript-heading">
+      <h3 id="audio-transcript-heading">Audio transcript</h3>
+      <p>The audio contains the sound of a bear growling in the wild.</p>
+    </section>
+
+    <h2>Bear Statistics</h2>
+    <table summary="This table lists different species of bears and their average weights.">
+      <caption>Bear species and average weights</caption>
+      <thead>
+        <tr>
+          <th scope="col">Species</th>
+          <th scope="col">Average Weight (kg)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Brown Bear</th>
+          <td>270</td>
+        </tr>
+        <tr>
+          <th scope="row">Polar Bear</th>
+          <td>450</td>
+        </tr>
+        <tr>
+          <th scope="row">American Black Bear</th>
+          <td>140</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </article>
+
+  <section class="comments">
+    <h2>Comments</h2>
+    <button class="show-hide" aria-expanded="false">Show comments</button>
+    <div class="comment-wrapper">
+      <ul class="comment-container">
+        <li>
+          <p><strong>Jane:</strong> Bears are amazing creatures!</p>
+        </li>
       </ul>
 
-      <form class="search" role="search"> <label for="search-query" class="visually-hidden">Search query:</label> <input type="search" name="q" id="search-query" placeholder="Search query"> <input type="submit" value="Go!">
+      <form class="comment-form">
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="comment">Comment:</label>
+        <input id="comment" name="comment" type="text" required>
+
+        <button type="submit">Post Comment</button>
       </form>
-    </nav>
+    </div>
+  </section>
+</main>
 
-    <main>
-      <article>
-        <h2>The trouble with Bears</h2> <p>By Evan Wild</p> <p>Tall, lumbering, angry, dangerous. The real live bears of this world are proud, independent creatures, self-serving and always on the hunt for food. Nothing like the bears you see on TV, like Baloo from renowned documentary, The Jungle Book.</p> <p>So what are bears really like, and why does the world's media portray them with such a skewed vision? In this article we try to answer those questions, and give you a real insight into the life of the bear.</p> <h3>Types of bear</h3> <p>Bears come in two varieties — large and medium. You don't get small bears. If you have seen a small bear, then it was in fact probably a baby bear (cub) from another species.</p> <p>Bears can also be classified in terms of their habitat — both large and medium bears are just as at home in urban areas as they are in the countryside. Different habitats encourange different behaviour however, as you'll find out below. The below table also gives you some useful facts about bears.</p> <table>
-          <caption>Useful facts about bears</caption> <thead>
-            <tr>
-              <th scope="col">Bear Type</th> <th scope="col">Coat</th>
-              <th scope="col">Adult size</th>
-              <th scope="col">Habitat</th>
-              <th scope="col">Lifespan</th>
-              <th scope="col">Diet</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Wild</th> <td>Brown or black</td>
-              <td>1.4 to 2.8 meters</td>
-              <td>Woods and forests</td>
-              <td>25 to 28 years</td>
-              <td>Fish, meat, plants</td>
-            </tr>
-            <tr>
-              <th scope="row">Urban</th> <td>North Face</td>
-              <td>18 to 22</td>
-              <td>Condos and coffee shops</td>
-              <td>20 to 32 years</td>
-              <td>Starbucks, sushi</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>Habitats and Eating habits</h3> <p>Wild bears eat a variety of meat, fish, fruit, nuts, and other natually growing ingredients. In general they will hunt for food themselves in woodland or rivers, but at a push they will track down their sustenance from farms or country houses. They tend to live in relative isolation, in caves, tents, or cottages.</p> <img src="../img/wild-bear.jpg" alt="A wild bear in a forest, possibly a brown bear, looking towards the viewer."> <p>Urban (gentrified) bears on the other hand have largely abandoned the old ways. They will hunt other urban creatures if necessary (including other predators like rats and foxes), but prefer to scavenge from readily available urban food outlets like dumpsters, bins, and fast food joints. When food has proven scarce, urban bears have even been known to break into people's kitchens and steal essentials like baked beans, ready meals, and microwave ovens.</p> <img src="../img/urban-bear.jpg" alt="An urban bear rummaging through a dumpster in an alleyway."> <p>Urban bears will sleep anywhere they can, from bus shelters and parks, to the toilets in McDonalds, to their own apartment.</p> <h3>Mating rituals</h3> <p>Bears are romantic creatures by nature, and will naturally look for a mate that they can spend the rest of their lives with. They will woo a potential suitor by making their dwelling look attractive — for example with cave paintings or a bed of reeds in the case of a wild bear, and mood lighting and a Michael Bublé CD in the case of an urban bear.</p> <p>The following audio clip contains a fact file providing more details about bear mating rituals, along with samples and quotes from experts.</p> <audio controls>
-          <source src="media/bear.mp3" type="audio/mpeg">
-          <source src="media/bear.ogg" type="audio/ogg">
-          <p>Your browser does not support the audio element. You can <a href="media/bear.mp3" download>download the audio file here</a>.</p> </audio>
-        <details> <summary>Transcript of "Bear Mating Rituals Fact File"</summary>
-          <p>
-            [**Transcript of Audio:**]
-            (Sound of a gentle forest ambiance)
-            **Narrator:** Welcome to our special segment on bear mating rituals. These powerful yet sensitive creatures embark on fascinating journeys to find their mates.
-            **Expert 1 (Dr. Jane Goodbear):** "Male bears typically roam vast territories in search of receptive females. Their calls, though sometimes misinterpreted as aggression, are often complex declarations of presence."
-            (Sound of a bear vocalization - a deep rumble)
-            **Narrator:** Females, on the other hand, are highly selective. They assess potential partners based on factors like size, health, and the quality of their dens.
-            **Expert 2 (Prof. David Attenboroughbear):** "A male's ability to provide a secure and appealing den is paramount. Wild bears might line their caves with the finest moss, while their urban counterparts might offer a cozy, curated apartment."
-            (Sound of gentle jazz music, possibly Michael Bublé)
-            **Narrator:** Once a pair bonds, their courtship can last for several weeks, involving playful chases, mutual grooming, and shared meals. This intricate dance ensures the continuation of their species.
-            (Sound of forest ambiance fades)
-          </p>
-        </details>
-
-        <aside> <h3>About the author</h3> <p>Evan Wild is an unemployed plumber from Doncaster, who has been really "in to" wildlife since childhood. He once went to Chester Zoo on holiday, but got ill after eating a doner kebab.</p> <p>He has never seen a bear, but once read a Daily Mail article about them, and thinks they sound cool.</p> </aside>
-
-        <section class="comments">
-          <button type="button" class="show-hide" aria-expanded="false" aria-controls="comment-wrapper-id">Show comments</button> <div class="comment-wrapper" id="comment-wrapper-id"> <h2>Add comment</h2> <form class="comment-form">
-              <div class="flex-pair">
-                <label for="name">Your name:</label> <input type="text" name="name" id="name" placeholder="Enter your name">
-              </div>
-              <div class="flex-pair">
-                <label for="comment">Your comment:</label> <input type="text" name="comment" id="comment" placeholder="Enter your comment">
-              </div>
-              <div>
-                <input type="submit" value="Submit comment">
-              </div>
-            </form>
-
-            <h2>Comments</h2> <ul class="comment-container">
-              <li>
-                <p>Bob Fossil</p>
-                <p>Oh I am so glad you taught me all about the big brown angry guys in the woods. With their sniffing little noses and their bad attitudes, they can sure be a menace — I was thinking of putting them all in a truck and driving them outta here. I run a zoo, you know.</p>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </article>
-
-      <aside class="secondary"> <h2>Related</h2> <ul>
-          <li><a href="#">The trouble with Bees</a></li>
-          <li><a href="#">The trouble with Otters</a></li>
-          <li><a href="#">The trouble with Penguins</a></li>
-          <li><a href="#">The trouble with Octopi</a></li>
-          <li><a href="#">The trouble with Lemurs</a></li>
-        </ul>
-      </aside>
-    </main>
-
-    <footer>
-      <p>©Copyright 2050 by nobody. All rights reversed.</p>
-    </footer>
-
-    <script src="main.js"></script>
-
-  </body>
+<script src="main.js"></script>
+</body>
 </html>
