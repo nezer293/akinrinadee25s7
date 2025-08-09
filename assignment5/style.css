@@ -1,49 +1,327 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #111111;
+/* || General setup */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header, nav, main {
-  max-width: 800px;
-  margin: auto;
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  background-color: #dde; /* Light grey-blue for better contrast */
+}
+
+body {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #2a2a2a;
+}
+
+/* || Typography */
+h1, h2, h3, h4 {
+  font-family: 'Sonsie One', cursive;
+  color: #2a2a2a;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+p, li, table, label, caption {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* || Header and navigation layout */
+nav, article, footer, .secondary {
+  background-color: #0a662d; /* Darker green for better contrast */
+  color: white;
+}
+
+article, footer, .secondary {
+  padding: 10px 30px;
+}
+
+article {
+  margin-right: 10px;
+}
+
+nav {
+  background-color: #ff80ff; /* Pink navigation */
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 
 nav ul {
-  list-style: none;
   padding: 0;
+  margin: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+  gap: 1rem;
 }
 
-nav ul li {
-  display: inline-block;
-  margin-right: 1em;
+nav li {
+  text-align: center;
+  flex: 1 1 auto;
 }
 
-a {
-  color: #0645AD;
+nav a {
+  display: block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem 0;
 }
 
-a:focus, button:focus, input:focus {
-  outline: 3px solid #ffbf47;
+nav a:focus,
+nav a:hover {
+  outline: 3px solid #0a662d;
+  background-color: #d9b3d9;
+  color: #000;
 }
 
-button {
-  background-color: #0645AD;
-  color: #ffffff;
+/* Search form styling */
+nav .search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: auto;
+  padding-left: 2em;
+}
+
+.search input[type="search"] {
+  flex-grow: 3;
+  font-size: 1.6rem;
+  height: 36px;
+  padding: 0 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.search input[type="submit"] {
+  flex-grow: 1;
+  margin-left: 1rem;
+  background: #333;
   border: none;
-  padding: 0.5em 1em;
+  color: white;
+  font-size: 1.6rem;
+  height: 36px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.search input[type="submit"]:hover,
+.search input[type="submit"]:focus {
+  background-color: #555;
+  outline: none;
+}
+
+/* Screen reader only label */
+.sr-only {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px; 
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+/* || Main layout */
+main {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+article {
+  flex: 5 1 600px;
+  background-color: white;
+  color: #2a2a2a;
+}
+
+.secondary {
+  flex: 2 1 250px;
+  background-color: white;
+  color: #2a2a2a;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+footer {
+  margin-top: 10px;
+  padding: 1rem 0;
+  text-align: center;
+  background-color: #0a662d;
+  color: white;
+}
+
+/* || Table styling */
+table {
+  width: 100%;
+  background-color: #dde;
+  border-collapse: collapse;
+  border: 1px solid #999;
+  margin-bottom: 1.5rem;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #999;
+}
+
+td {
+  text-align: center;
+}
+
+th[scope="col"] {
+  border-bottom: 2px solid black;
+  background-color: #bbd;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #def;
+}
+
+caption {
+  font-weight: bold;
+  padding: 0.5rem 0;
+  text-align: left;
+}
+
+/* || Images and audio */
+img, audio {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+  height: auto;
+}
+
+audio {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* || Comments */
+.comments {
+  background-color: #def;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+.show-hide {
+  display: block;
+  margin: 0 auto 1rem auto;
+  width: 150px;
+  background: #333;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.6rem;
+  line-height: 32px;
+  border-radius: 5px;
+}
+
+.show-hide:focus,
+.show-hide:hover {
+  background-color: #555;
+  outline: none;
+}
+
+.comment-form {
+  margin-bottom: 3rem;
+}
+
+.comment-form .flex-pair {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 3rem 1rem;
+  gap: 0.5rem;
+}
+
+.comment-form label {
+  flex: 1 0 120px;
+  text-align: right;
+  align-self: center;
+  font-size: 1.6rem;
+}
+
+.comment-form input[type="text"] {
+  flex: 3 1 200px;
+  font-size: 1.6rem;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
+.comment-form input[type="submit"] {
+  width: 30%;
+  display: block;
+  margin: 1rem auto 0 auto;
+  background: #333;
+  border: none;
+  color: white;
+  font-size: 1.6rem;
+  padding: 0.5rem 0;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #003366;
+.comment-form input[type="submit"]:hover,
+.comment-form input[type="submit"]:focus {
+  background-color: #555;
+  outline: none;
 }
 
-.comment-wrapper {
-  margin-top: 1em;
+.comment-container {
+  margin-top: 0;
+  padding-left: 0;
 }
 
-.sr-only {
-  position: absolute;
-  left: -9999px;
+.comment-container li {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.comment-container li p:nth-child(1) {
+  flex: 1 0 120px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.comment-container li p:nth-child(2) {
+  flex: 5 1 auto;
+  margin: 0;
 }
